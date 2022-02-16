@@ -101,15 +101,19 @@ return last
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-
+let arrayPrimeiro = array.shift()
+let arrayUltimo  = array.pop()
+let ultimoItemParaPrimeiro = array.push(arrayPrimeiro)
+let primeiroItemParaUltimo = array.unshift(arrayUltimo)
+return array
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-let padrao1 = string1.toLowerCase
-let padrao2 = string2.toLowerCase
-return padrao1 == padrao2
+let padrao1 = string1.toUpperCase()
+let padrao2 = string2.toUpperCase()
+return padrao1 === padrao2
 }
 
 // EXERCÍCIO 13
