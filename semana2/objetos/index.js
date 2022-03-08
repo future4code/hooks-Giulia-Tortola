@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+const objeto = {
+    nomeDaPessoa = nome,
+    generoDaPessoa = genero
+}
+function retornarBemVindes (objeto) {
+ 
+    if objeto.generoDaPessoa === "masculino" {
+        return `Bem vindo ${objeto.nomeDaPessoa}`
+    }
+    else if objeto.generoDaPessoa === "feminino" {
+        return `Bem vinda ${objeto.nomeDaPessoa}`
+    }
+    else objeto.generoDaPessoa === "outro" {
+        return `Desejamos boas vindas`
+    }
+}
+
+retornarBemVindes("Giulia", "feminino")
+=======
 /* Exercícios de Interprtação de código
 1. a) 
 Matheus Nachtergaele
@@ -88,3 +108,4 @@ function funcaoFruta (objetoA,objetoB,objetoC) {
     return console.log(carrinho)
 }
 funcaoFruta(fruta1, fruta2, fruta3)
+>>>>>>> e0e69a959a92ccdda461683d7654f0e596b0d45f
