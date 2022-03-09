@@ -37,3 +37,5 @@
        console.log("O jogo acabou!")
     }
    }
+
+   // só pra ter alguma alteração e enviar outro PR
