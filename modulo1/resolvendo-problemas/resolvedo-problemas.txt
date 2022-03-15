@@ -1,0 +1,32 @@
+- **Exercícios de fixação do conhecimento**
+    
+Faça um resumo sobre quais são os 7 passos fundamentais para a resolução de problemas
+e como eles podem nos ajudar a solucionar nossos desafios de programação.
+
+
+1) Ter atenção no Enunciado: Ler o pedido com muita atenção, 
+se questionar qual meu objetivo nesse pedido o que é preciso entregar, e analisar e 
+identificar as informções únicas e relevantes;
+
+2) Retirar Informações Relevantes:
+Ler muito atentamente, recolher palavras chaves do "enunciado"/pedido;
+
+3) Pensar entradas e Saídas: 
+Iniciar o pensamento lógico elencando com as palavras chaves, escrever em uma linguagem
+neutra iniciando a montagem do algoritmo, e no formato de entradas e saídas;
+
+4) Fazer um esquema visual: 
+Desenhar o que o que vai entrar no código o que vai sair, como um esquema 
+gráfico com setas; 
+
+5) Criar código feio: 
+Realmente "codar" fazer o código mesmo que complexo e feio, ir ajustando, 
+diminuindo os erros; 
+
+6) Testar força bruta: 
+Depois tentar reformar o código feio, escrevendo no nosso idioma e depois traduzindo
+para a linguaguem de programação utilizada; 
+
+7) Refatorar
+Testar, e reestruturar o código com pequenas mudanças para melhorar
+
