@@ -26,13 +26,13 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-    let arrayPares = []
-    if (array[i] % 2 === 0 ) {
-    return arrayPares.push[i]
+  let arrayPares = []
+  for(i = 0; i<array.length;i++) {
+    if(array[i] % 2 ===0){
+      arrayPares.push(array[i])
     }
-  return arrayPares
+  }return arrayPares
 }
-
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
  
