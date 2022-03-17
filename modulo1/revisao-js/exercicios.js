@@ -35,12 +35,25 @@ function retornaNumerosPares(array) {
 }
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  let arrayPares = []
+  let arrayElevado =[]
+  for(i = 0; i<array.length;i++) {
+    if(array[i] % 2 ===0){
+      arrayPares.push(array[i])
+      arrayElevado.push(array[i]*array[i])
+    }
+  }return arrayElevado
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+  let maiorNumero = array[0]
+  for(let i=0; i< array.length; i++){
+    if(array[i] > maiorNumero){
+      maiorNumero = array[i]
+    }
+  }
+  return maiorNumero
 }
 
 // EXERCÍCIO 07
