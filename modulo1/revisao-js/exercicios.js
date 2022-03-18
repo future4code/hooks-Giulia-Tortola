@@ -75,8 +75,6 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
     maiorDivisivelPorMenor: maiorDivisivelPorMenor,
     diferenca: diference
   }
-  
-
 }
 
 // EXERCÍCIO 08
@@ -89,12 +87,27 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+  if (ladoA == ladoB && ladoA == ladoC && ladoB == ladoC){
+    return "Equilátero"
+  } else if (ladoA !== ladoB && ladoB !== ladoC && ladoA !== ladoC){
+    return "Escaleno"
+ }else  {
+    return "Isósceles"
+  }
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+  let array2Maior2Menor = [];
+  const arrayOrdenado = array.sort((a,b) => {
+    if (a>b) return 1;
+    if (a<b) return -1;
+
+    return 0
+  })
+  array2Maior2Menor.push(arrayOrdenado[arrayOrdenado.length -2 ])
+  array2Maior2Menor.push(arrayOrdenado[1])
+  return array2Maior2Menor
 }
 
 // EXERCÍCIO 11
