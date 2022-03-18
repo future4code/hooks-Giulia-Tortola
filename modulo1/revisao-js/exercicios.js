@@ -123,12 +123,26 @@ return pessoa
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+  const altura = 1.5;
+  const idadeMinima = 14;
+  const idadeMaxima = 60;
+
+  let pessoasNãoAutorizadas = pessoas.filter((item)=>{
+    return item.altura > altura && item.idade > idadeMinima && item.idade <= idadeMaxima
+  })
+   return pessoasNãoAutorizadas
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+  const altura = 1.5;
+  const idadeMinima = 14;
+  const idadeMaxima = 60;
+
+  let pessoasNãoAutorizadas = pessoas.filter((item)=>{
+    return item.altura < altura || item.idade <= idadeMinima || item.idade > idadeMaxima
+  })
+   return pessoasNãoAutorizadas
 }
 
 // EXERCÍCIO 14
