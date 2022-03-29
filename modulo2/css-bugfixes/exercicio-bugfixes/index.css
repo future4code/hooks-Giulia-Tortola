@@ -156,7 +156,6 @@ img {
     color: black;
     display: inline-block;
     font: roboto;
-    position: absolute;
 }
 
 #back-button:hover {
