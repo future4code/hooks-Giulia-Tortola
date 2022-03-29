@@ -22,9 +22,14 @@ input {
 }
 
 button:focus {
+    color: white;   
+}
+button:active{
     color: white;
 }
-
+button:hover{
+    background-color: #c44f00;
+}
 
 div>p:first-child {
     display: block;
