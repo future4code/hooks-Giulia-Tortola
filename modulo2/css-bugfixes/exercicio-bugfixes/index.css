@@ -103,6 +103,8 @@ div:last-child {
 
 table {
     width: 60%;
+    box-align: center;
+    margin: auto;
 }
 
 td button {
@@ -112,10 +114,14 @@ td button {
     border-radius: 5px;
     color: black;
 }
-
+tr,td {
+    box-align: center;
+}
 .container-do-search {
     margin-top: 20px;
     height: 100px;
+    text-align: center;
+    margin: auto;
 }
 
 
@@ -127,6 +133,7 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    
 }
 
 #back-button:hover {
