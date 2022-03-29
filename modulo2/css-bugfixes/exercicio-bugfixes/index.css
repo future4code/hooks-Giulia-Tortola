@@ -8,12 +8,15 @@
     margin: 0;
     padding: 0;
 }
-
+div {
+    font:roboto;
+}
 h2 {
     background-color: #fe7e02;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 10px 10px 10px;
     color: white;
     text-align: center;
+    font: roboto;
 }
 
 input {
@@ -47,16 +50,19 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    font: roboto;
 }
 
 .botao-amarelo:hover {
     background-color: #c44f00;
+    font: roboto;
 }
 
 .container {
     height: 200px;
     text-align: center;
     padding: 100px;
+    font: roboto;
 }
 
 .icone {
@@ -75,21 +81,25 @@ div img {
     color: white;
     display: block;
     font-size: larger;
+    font: roboto;
     
 }
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    font: roboto;
 }
 
 #container-para-comprar {
     background-color: #e7eb90;
+    font: roboto;
 }
 
 #container-para-comprar>p {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
+    font: roboto;
 }
 
 
@@ -102,8 +112,11 @@ div img {
 div:nth-child(2),
 div:last-child {
     text-align: center;
+    font: roboto;
 }
-
+div{
+    margin: auto;
+}
 table {
     width: 60%;
     box-align: center;
@@ -116,6 +129,8 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    font: roboto;
+    text-align: center;
 }
 tr,td {
     box-align: center;
@@ -129,9 +144,8 @@ img {
     height: 100px;
     text-align: center;
     margin: auto;
+    font: roboto;
 }
-
-
 #back-button {
     background-color: white;
     width: 100px;
@@ -140,9 +154,12 @@ img {
     border-radius: 5px;
     font-size: 10px;
     color: black;
-    
+    display: inline-block;
+    font: roboto;
+    position: absolute;
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    font: roboto;
+    background-color: #635a3d;
 }
