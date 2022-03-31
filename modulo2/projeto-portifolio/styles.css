@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+header {
+    padding: 5px;
+    text-align: center;
+    background: #5472c6;
+    color: black;
+    font-size: 20px;
+    }
+header  span{
+    text-align: left;
+}
+  
+header h1 { 
+      color: #ffffff;
+       font-family: 'Raleway',sans-serif;
+        font-size: 62px; font-weight: 800; 
+        line-height: 72px; margin: 0 0 24px; 
+        text-align: center; 
+    text-transform: uppercase; 
+  }
+header p {
+    color: #f8f8f8;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0 0 24px; 
+}
+
+ul {
+    padding:0px;
+	margin:0px;
+	background-color:#EDEDED;
+	list-style:none;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+}
+li {
+    display:inline;
+}
+#descricao h1 {
+    color: gray;
+    font-family: 'Raleway',sans-serif;
+}
+.descricao-bio{
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    background-color:rgb(168, 168, 168); 
+}
+#descricao p{
+    color: bisque;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+
+}
+#descricao-ed1{
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    background-color:rgb(168, 168, 168); 
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+#descricao-ed2{
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: right;
+    background-color:rgb(168, 168, 168);
+    position: relative;
+    padding: 10px;
+    border-radius: 25px;
+
+}
+#descricao-ed3{
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    background-color:rgb(168, 168, 168); 
+    padding: 10px;
+    border-radius: 25px;
+}
+footer{
+    position:relative;
+    font-family: 'Raleway',sans-serif;
+	top: 100vh
+	width:100%;
+    text-align:center;
+    background-color: #EDEDED;
+    padding: 10px;
+}
+img{
+    border: solid 3px black;
+    border-radius: 100%;
+}
