@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -33,6 +34,44 @@ nav a{
     justify-content: center;
 }
 /**/
+
+header {
+    padding: 5px;
+    text-align: center;
+    background: rgb(168, 168, 168);
+    color: black;
+    font-size: 20px;
+    }
+  
+header h1 { 
+      color: #ffffff;
+       font-family: 'Raleway',sans-serif;
+        font-size: 62px; font-weight: 800; 
+        line-height: 72px; margin: 0 0 24px; 
+        text-align: center; 
+    text-transform: uppercase; 
+  }
+header p {
+    color: #f8f8f8;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0 0 24px; 
+}
+
+ul {
+    padding:0px;
+	margin:0px;
+	background-color:#EDEDED;
+	list-style:none;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+}
+li {
+    display:inline;
+}
+
 #descricao h1 {
     color: gray;
     font-family: 'Raleway',sans-serif;
@@ -54,7 +93,9 @@ nav a{
     line-height: 32px;
 
 }
+
 /*estilização educação*/
+
 #descricao-ed1{
     color: white;
     font-family: 'Raleway',sans-serif;
@@ -65,7 +106,6 @@ nav a{
     background-color:rgb(168, 168, 168); 
     padding: 10px;
     border-radius: 25px;
-    
 }
 #descricao-ed2{
     color: white;
@@ -78,7 +118,6 @@ nav a{
     position: relative;
     padding: 10px;
     border-radius: 25px;
-
 }
 #descricao-ed3{
     color: white;
@@ -91,7 +130,6 @@ nav a{
     padding: 10px;
     border-radius: 25px;
 }
-/*Estilização rodapé*/
 footer{
     font-family: 'Raleway',sans-serif;
 	top: 100vh;
@@ -184,3 +222,12 @@ textarea{
     width: 100%;
     margin: 0 auto;
 }
+footer span {
+    position:absolute;
+    font-family: 'Raleway',sans-serif;
+	bottom:0;
+	width:100%;
+    text-align: center;
+    background-color: #EDEDED;
+}
+

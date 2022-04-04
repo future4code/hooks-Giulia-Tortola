@@ -1,0 +1,65 @@
+body{
+    background-color: gray;
+}
+p{
+    color: yellow;
+}
+div{
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    color: yellow;;
+    display: block;
+    text-align: center;
+}
+a{
+    background-color: yellow;
+    color: black;
+    align-items: center;
+}
+header{
+    background-color: black;
+    color: yellow;
+    height: 1500,px;
+    text-align: center;
+    font-size: xx-large;
+}
+footer{
+    color:black;
+    background-color: yellow;
+    height: 1500,px;
+    text-align: center;
+}
+td{
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+th{
+    color: black;
+    background: yellow;
+    align-items: center;
+    padding: 30px;
+}
+h2{
+    color: yellow;;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+ol{
+    align-items: center;
+    font-size: xx-large;
+    padding: 10px;
+}
+button{
+    background-color: yellow;
+    font-size: larger;
+    color: black;
+    padding: 15px;
+}

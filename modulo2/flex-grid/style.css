@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 10px;
+    background-color: mediumvioletred;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo img,h1{
+    width:30px;
+    margin: 0 auto;
+    display: inline;
+}
+button{
+    size-adjust: auto;
+    padding: 7px;
+}
+.meio-site{
+    display: grid;    
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+}
+.loja{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+nav{
+    display: flex;
+    background-color: #f2d0e0;
+    flex-direction: column;        
+}
+.caixinha-logo-texto{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.menu img{
+    margin-top: 15px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.bolo1 img{
+    width: 200px;
+    margin-bottom: 15px;
+    
+}
+.bolo1{
+box-shadow: 5px 10px darkgray;
+text-align: center;
+}
+
+footer{
+    margin-top: 15px;
+    background-color: mediumvioletred;
+    text-align: center;
+    position:relative;
+}
+
+a{
+width: 150px;
+display: flex;
+}
