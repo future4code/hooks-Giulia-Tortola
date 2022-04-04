@@ -1,0 +1,164 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    font:roboto;
+}
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-align: center;
+    font: roboto;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+}
+
+button:focus {
+    color: white;   
+}
+button:active{
+    color: white;
+}
+button:hover{
+    background-color: #c44f00;
+}
+
+div>p:first-child {
+    display: block;
+}
+
+div img {
+    width: 90px;
+    height: 90px;
+}
+
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font: roboto;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+    font: roboto;
+}
+
+.container {
+    height: 200px;
+    text-align: center;
+    padding: 100px;
+    font: roboto;
+}
+
+.icone {
+    height: 15px;
+}
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+    display: block;
+    font-size: larger;
+    font: roboto;
+    
+}
+
+#container-de-descricao>ol {
+    padding: 15px 0px;
+    font: roboto;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+    font: roboto;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+    font: roboto;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+    font: roboto;
+}
+div{
+    margin: auto;
+}
+table {
+    width: 60%;
+    box-align: center;
+    margin: auto;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    font: roboto;
+    text-align: center;
+}
+tr,td {
+    box-align: center;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    font: roboto;
+}
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+    display: inline-block;
+    font: roboto;
+}
+
+#back-button:hover {
+    font: roboto;
+    background-color: #635a3d;
+}
