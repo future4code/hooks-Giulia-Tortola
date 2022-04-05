@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    background-color: orange;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 5px 10px 10px;
+}
+body{
+    background-color: rgb(247, 215, 148);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.busca{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 5px;
+}
+form,input{
+    background-color: orange;
+    border-color: black;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    height: 40px;
+}
+button{
+    padding: 10px;
+    background-color:black ;
+    color:orange;
+    border-radius: 20%;
+}
+button:hover{
+    background-color:orange ;
+    color:black;
+    border-radius: 20%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 10px;
+}
+.cardvideo{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 7%;
+    background-color: gainsboro;
+   
+}
+.cardvideo>video{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10%;
+}
+.pagina > h1{
+    text-align: center;
+    
+}
+.pagina > video{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+footer{
+    background-color: orange;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 1px;
+}
