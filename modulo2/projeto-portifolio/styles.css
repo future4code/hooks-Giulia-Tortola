@@ -1,3 +1,40 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+/* Estilização cabeçalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    background: #5472c6;
+    color: black;
+    font-size: 30px;
+    justify-content: space-between;
+    }
+
+  
+header h1 { 
+    Color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px; font-weight: 800; 
+    text-transform: uppercase; 
+    margin-right: 15px;;
+  }
+nav a{
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 15px; font-weight: 800;
+    text-transform: uppercase; 
+    margin:5px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/**/
+
 header {
     padding: 5px;
     text-align: center;
@@ -34,6 +71,7 @@ ul {
 li {
     display:inline;
 }
+
 #descricao h1 {
     color: gray;
     font-family: 'Raleway',sans-serif;
@@ -55,6 +93,9 @@ li {
     line-height: 32px;
 
 }
+
+/*estilização educação*/
+
 #descricao-ed1{
     color: white;
     font-family: 'Raleway',sans-serif;
@@ -63,7 +104,8 @@ li {
     line-height: 32px;
     text-align: left;
     background-color:rgb(168, 168, 168); 
-    
+    padding: 10px;
+    border-radius: 25px;
 }
 #descricao-ed2{
     color: white;
@@ -74,7 +116,8 @@ li {
     text-align: right;
     background-color:rgb(168, 168, 168);
     position: relative;
-
+    padding: 10px;
+    border-radius: 25px;
 }
 #descricao-ed3{
     color: white;
@@ -84,6 +127,100 @@ li {
     line-height: 32px;
     text-align: left;
     background-color:rgb(168, 168, 168); 
+    padding: 10px;
+    border-radius: 25px;
+}
+footer{
+    font-family: 'Raleway',sans-serif;
+	top: 100vh;
+    background-color: #EDEDED;
+    padding: 10px;
+    text-align: center;
+    position:;
+    width: 100%;
+    
+}
+img{
+    border: solid 5px whitesmoke;
+    border-radius: 100%;
+    
+}
+/*Estilização home-minibio*/
+article{
+    text-align: center;
+    background-color: gainsboro;
+}
+#minibio{
+    width: 50%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #5472c6;
+    
+}
+/* Estilização formulário*/
+form{
+    margin:0 auto;
+    width: 100%;
+    background-color: #5472c6;
+    padding: 10px;
+    color: #EDEDED;
+    text-align: center;
+}
+input {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    
+}
+button:hover{
+    background-color:#5472c6;
+    color:#EDEDED
+}
+textarea{
+    width: 30%;
+    height: 50%;
+    padding: 12px 20px;
+}
+/*Estilização habilidades*/ 
+
+.habilidade{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: xx-large;
+}
+.hab1{
+    border: 2px solid #E6E6E6; 
+    height: 300px; 
+    width: 300px;
+    
+}
+#hab{
+    width: 200px;
+    margin: 0 auto;
+    text-transform: uppercase; 
+}
+/*Estilização projetos*/
+.projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#proj > h1{
+    width: 100%;
+    margin: 0 auto;
+}
+.regras{
+    font-size: x-large;
+}
+#projetos{
+    width: 100%;
+    margin: 0 auto;
 }
 footer span {
     position:absolute;
