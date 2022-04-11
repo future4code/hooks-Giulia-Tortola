@@ -83,3 +83,38 @@ footer{
     position: absolute;
     bottom: 1px;
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width:480px) {
+    header{
+        width: 100%;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+    }  
+    .pagina>video{
+        width: 100%;
+    }
+}
+@media screen and (min-device-width : 481px) and (max-device-width:1100px) {
+    header{
+        width: 100%;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+    }  
+    .pagina>video{
+        width: 100%;
+    }
+}
+
+/* tá dando erro, vou só escrever algo aqui e tentar novamente :(
