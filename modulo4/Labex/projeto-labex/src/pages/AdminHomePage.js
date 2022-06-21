@@ -6,9 +6,9 @@ const AdminHomePage = () => {
     const  goToHomePage = () => {
     navigate("/")}
     const  goToTripDetails = () => {
-    navigate("/trip-details")}
+    navigate("/trips")}
     const  goToCreateTrip = () => {
-    navigate("/create-trip")}
+    navigate("/trips/create")}
 
     return (
         <>

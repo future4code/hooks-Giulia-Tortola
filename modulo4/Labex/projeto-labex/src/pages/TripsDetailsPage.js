@@ -4,12 +4,15 @@ const TripDetailsPage = () => {
     const navigate = useNavigate()   
     const params = useParams(); 
     const  goToHomePage = () => {
-    navigate("/")}
+        navigate("/")}
+    const goToCreateTrip = () => {
+        navigate("/admin/trips/create")}
     return ( 
         <>
         <p>Detalhes da Viagem</p>
-        <button>Inscrição</button>
+        <h2>Inscritos:</h2>
         <button onClick={goToHomePage}>Voltar</button>
+        <button onClick={goToCreateTrip}>Criar Viagem</button>
         </>
     )
 }
