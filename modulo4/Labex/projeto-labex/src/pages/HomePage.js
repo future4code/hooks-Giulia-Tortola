@@ -6,7 +6,7 @@ const params = useParams();
 const  goToLogin = () => {
     navigate("/login")}
 const  goToListTrips= () => {
-    navigate("/list-trips")}
+    navigate("/trips/list")}
     return (
         <div>
         <p>Home</p>

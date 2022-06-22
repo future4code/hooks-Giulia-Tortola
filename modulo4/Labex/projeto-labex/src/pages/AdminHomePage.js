@@ -1,14 +1,28 @@
+import axios from "axios";
+import { useEffect } from "react";
 import {useNavigate, useParams} from "react-router-dom"
+import { useProtectedPage } from "../hooks/ProtectedPage"
 
 const AdminHomePage = () => {
+    useProtectedPage();
+    useEffect(() => {
+        const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/giulia-verruck-hooks/trips"
+        const header= {headers: {auth: localStorage.getItem("token")}}
+    
+    axios
+    .get(URL, header)
+    .then((res) => {console.log(res.data)})
+    .catch((err)=>{console.log})
+},[])
+
     const navigate = useNavigate()   
     const params = useParams(); 
     const  goToHomePage = () => {
     navigate("/")}
     const  goToTripDetails = () => {
-    navigate("/trip-details")}
+    navigate("/trips")}
     const  goToCreateTrip = () => {
-    navigate("/create-trip")}
+    navigate("/trips/create")}
 
     return (
         <>
