@@ -1,6 +1,8 @@
 import {useNavigate, useParams} from "react-router-dom"
+import { useProtectedPage } from "../hooks/ProtectedPage"
 
 const TripDetailsPage = () => {
+    useProtectedPage()
     const navigate = useNavigate()   
     const params = useParams(); 
     const  goToHomePage = () => {
