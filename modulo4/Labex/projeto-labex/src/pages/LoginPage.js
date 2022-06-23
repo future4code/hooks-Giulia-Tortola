@@ -3,6 +3,7 @@ import React, {useState} from "react"
 import axios from "axios"
 
 const LoginPage = () => {
+    const [form, setForm] = useState({email: "", password: ""})
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const navigate = useNavigate()   
@@ -35,11 +36,12 @@ const LoginPage = () => {
         <input
          placeholder="email"
          type="email"
-         value={email}
+         value={form.email}
          onChange={onChangeEmail}/>
         <input 
          placeholder="senha"
          type="password"
+         value={form.password}
          onChange={onChangePassword}
         />
         <button onClick={onSubmitLogin}>logar</button>

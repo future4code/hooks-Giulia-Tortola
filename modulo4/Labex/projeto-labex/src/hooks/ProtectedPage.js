@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom"
 
 export const useProtectedPage = () => {
     const navigate = useNavigate();
@@ -7,7 +7,7 @@ export const useProtectedPage = () => {
     useEffect(() => {
       const token = localStorage.getItem("token");
   
-      if (token === null) {
+      if (!token) {
         navigate("/");
       }
     }, [navigate]);
