@@ -2,6 +2,12 @@ import axios from "axios";
 import { useEffect } from "react";
 import {useNavigate, useParams} from "react-router-dom"
 import { useProtectedPage } from "../hooks/ProtectedPage"
+import ButtonAppBarLog from "../styles/components/HeaderLogged";
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import Typography from "@mui/material/Typography"
+import { BodyContainer } from "../styles/styles";
+
 
 const AdminHomePage = () => {
     useProtectedPage();
@@ -22,14 +28,17 @@ const AdminHomePage = () => {
     const  goToTripDetails = () => {
     navigate("/trips")}
     const  goToCreateTrip = () => {
-    navigate("/trips/create")}
+    navigate("/admin/trips/create")}
 
     return (
         <>
-        <p>Admin Home</p>
-        <button onClick={goToHomePage}>Logout</button>
-        <button onClick={goToCreateTrip}>Criar Viagem</button>
-        <button onClick={goToTripDetails}>Detalhes das Viagens</button>
+        <ButtonAppBarLog/>
+        <BodyContainer>
+        <Typography variant="h1" color="primary">Área do Administrador</Typography>
+        <ButtonGroup variant="contained" aria-label="outlined primary button group">
+        <Button variant="contained" onClick={goToCreateTrip}>Criar Viagem</Button>
+        <Button variant="contained" onClick={goToTripDetails}>Detalhes das Viagens</Button>
+        </ButtonGroup></BodyContainer>
         </>
     )
 }

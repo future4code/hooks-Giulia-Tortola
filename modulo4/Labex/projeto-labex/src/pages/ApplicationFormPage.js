@@ -2,9 +2,12 @@ import {useNavigate, useParams} from "react-router-dom"
 import { useState, useEffect } from "react";
 import useForm from "../hooks/useForm";
 import axios from "axios";
+import Typography from "@mui/material/Typography"
 
-const ApplicationFormPage = () => {
-    const { form, onChange, cleanFields } = useForm({
+const ApplicationForm = () => {
+  const name = localStorage.getItem("name")
+  const idTrips = localStorage.getItem("id")
+  const { form, onChange, cleanFields } = useForm({
         name: "",
         age: "",
         applicationText: "",
@@ -22,16 +25,26 @@ const ApplicationFormPage = () => {
      useEffect(() => {getCountries()}, []);
     const navigate = useNavigate()   
     
-    const applyToTrip = () => {
+    const getApplyTrips = (id) => {
+      const body = {
+        name: nameUser,
+        age: age,
+        applicationText: applicationText,
+        profession: profession,
+        country: country
+      }
       axios 
-      .post ("https://us-central1-labenu-apis.cloudfunctions.net/labeX/giulia-verruck-hooks/trips/${}/apply")
+      .post (`https://us-central1-labenu-apis.cloudfunctions.net/labeX/giulia-verruck-hooks/trips/${id}/apply`)
+      .then ((res) => {
+        alert("Inscrição concluída!")})
+      .catch((err)=>{console.log(err.data)})
     }
     const  goToHomePage = () => {navigate("/")}
 
     return (
         <>
-        <button onClick={goToHomePage}>Voltar</button>
-        <p>Pagina de Inscrição</p>
+        <ButtonAppBar/>
+        <Typography variant="h1" color="primary">Inscrição</Typography>
         <form>
         <input 
           name={"name"}
@@ -56,7 +69,7 @@ const ApplicationFormPage = () => {
           />
         <input
          name={"profession"}
-         value={form.prfoession}
+         value={form.profession}
          onChange={onChange}
          placeholder="Profissão"
          required
@@ -71,11 +84,10 @@ const ApplicationFormPage = () => {
         })}
       </select>
         </form>
-       
-        <button>Increver-me</button>
+        <Button onClick={()=>getApplyTrips(idTrips)}>Increver-me</Button>
+        
         </>
     
     )
 }
-
-export default ApplicationFormPage
+export default ApplicationForm
