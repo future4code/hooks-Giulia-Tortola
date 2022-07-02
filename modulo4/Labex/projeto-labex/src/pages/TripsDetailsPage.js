@@ -1,5 +1,6 @@
 import {useNavigate, useParams} from "react-router-dom"
 import { useProtectedPage } from "../hooks/ProtectedPage"
+import Typography from "@mui/material/Typography"
 
 const TripDetailsPage = () => {
     useProtectedPage()
@@ -11,8 +12,8 @@ const TripDetailsPage = () => {
         navigate("/admin/trips/create")}
     return ( 
         <>
-        <p>Detalhes da Viagem</p>
-        <h2>Inscritos:</h2>
+        <Typography variant="h1" color="primary">Criar viagem</Typography>
+        <Typography variant="h2" color="secundary">Inscritos</Typography>
         <button onClick={goToHomePage}>Voltar</button>
         <button onClick={goToCreateTrip}>Criar Viagem</button>
         </>

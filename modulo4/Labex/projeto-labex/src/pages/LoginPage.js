@@ -1,6 +1,11 @@
 import {useNavigate, useParams} from "react-router-dom"
 import React, {useState} from "react"
 import axios from "axios"
+import Button from '@mui/material/Button';
+import ButtonAppBar from "../styles/components/Header";
+import TextField from '@mui/material/TextField';
+import { BodyContainer } from "../styles/styles";
+import Typography from "@mui/material/Typography";
 
 const LoginPage = () => {
     const [email, setEmail] = useState("")
@@ -8,14 +13,11 @@ const LoginPage = () => {
     const navigate = useNavigate()   
     const params = useParams(); 
 
-    const onChangeEmail = (e)=>{
-        setEmail(e.target.value)}
+    const onChangeEmail = (e)=>{setEmail(e.target.value)}
 
-    const onChangePassword = (e) => {
-        setPassword(e.target.value)}
+    const onChangePassword = (e) => {setPassword(e.target.value)}
 
-    const  goToHomePage = () => {
-        navigate("/")}
+    const  goToHomePage = () => {navigate("/")}
     const onSubmitLogin = () => {
         const url = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/giulia-verruck-hooks/login"
         const body = {
@@ -30,20 +32,24 @@ const LoginPage = () => {
     }
 
     return (
-        <><p>Login</p>
-        <button onClick={goToHomePage}> Voltar</button>
-        <input
-         placeholder="email"
+        <><ButtonAppBar/>
+        
+        <BodyContainer>
+        <Typography variant="h1" color="primary">Login</Typography>
+        <Button onClick={goToHomePage}> Voltar</Button>
+        <TextField
+         placeholder="emaIl"
          type="email"
          value={email}
          onChange={onChangeEmail}/>
-        <input 
+        <TextField 
          placeholder="senha"
          type="password"
+         value={password}
          onChange={onChangePassword}
         />
-        <button onClick={onSubmitLogin}>logar</button>
-       
+        <Button variant="contained" onClick={onSubmitLogin}>logar</Button>
+       </BodyContainer>
         
         </>)
 }
