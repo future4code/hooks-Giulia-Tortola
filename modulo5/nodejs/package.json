@@ -1,0 +1,14 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "RecebeUser.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pesquisar-usuario": "node RecebeUser.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
