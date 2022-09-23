@@ -1,0 +1,42 @@
+###
+POST http://localhost:3003/users 
+Content-Type: application/json
+
+{
+    "name": "Giulia",
+    "email": "giulia@email.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3003/users
+
+
+###
+POST http://localhost:3003/products
+
+{
+    "name": "Remo",
+    "price": 1500.00,
+    "image": "https://www.usadobrasil.com.br/sh-img/Remomadeiracanoafrente_1024x1024_remo%2Bcanoa%2Bhavaiana.jpg"
+}
+
+
+###
+GET http://localhost:3003/products
+
+
+###
+POST http://localhost:3003/purchases
+
+{
+    "user_id": "b660f230-e192-4e53-9921-4518ff352702",
+    "product_id": "3400d515-eefb-484f-8215-f3ff303b7b54",
+    "quantity": 1
+}
+
+###
+GET http://localhost:3003/user/:user_id
+
+###
+GET http://localhost:3003/getUsersPurchases
