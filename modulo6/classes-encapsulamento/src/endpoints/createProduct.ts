@@ -13,12 +13,6 @@ export const createProduct = async (req: Request, res: Response) => {
             throw new Error("Body inválido.")
         }
 
-        // const newProduct: Product = {
-        //     id: Date.now().toString(),
-        //     name,
-        //     price
-        // }
-
         const product = new Product(
             Date.now().toString(),
             name,

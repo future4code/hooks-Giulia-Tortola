@@ -5,9 +5,6 @@ export type TProduct = {
 }
 
 export class Product {
-    // private id: string
-    // private name: string
-    // private price: number
 
     constructor(
         private id: string,

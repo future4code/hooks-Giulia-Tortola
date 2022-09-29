@@ -13,13 +13,7 @@ export const createUser = async (req: Request, res: Response) => {
             throw new Error("Body inválido.")
         }
 
-        // const newUser: User = {
-        //     id: Date.now().toString(),
-        //     email,
-        //     password
-        // }
-
-        const user = new User(
+         const user = new User(
             Date.now().toString(),
             email,
             password
